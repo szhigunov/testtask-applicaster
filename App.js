@@ -6,11 +6,13 @@
  */
 
 import React from 'react';
-import {SafeAreaView, StatusBar} from 'react-native';
-import { NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
+import {StatusBar} from 'react-native';
+import {NavigationContainer} from '@react-navigation/native';
+import {createStackNavigator} from '@react-navigation/stack';
 
-import { HomeScreen } from './screens/home'
+import {HomeScreen} from './screens/home';
+import {VideoScreen} from './screens/video';
+import {WebViewScreen} from './screens/webview';
 
 import 'react-native-gesture-handler';
 
@@ -20,13 +22,25 @@ const App = () => {
   return (
     <>
       <StatusBar barStyle="dark-content" />
-      <SafeAreaView>
-        <NavigationContainer>
-          <Stack.Navigator>
-            <Stack.Screen name="Home" component={HomeScreen} />
-          </Stack.Navigator>
-        </NavigationContainer>
-      </SafeAreaView>
+      <NavigationContainer>
+        <Stack.Navigator>
+          <Stack.Screen
+            name="Home"
+            component={HomeScreen}
+            options={{title: 'Feed'}}
+          />
+          <Stack.Screen
+            name="Video"
+            component={VideoScreen}
+            options={({route}) => ({title: route.params.name})}
+          />
+          <Stack.Screen
+            name="WebView"
+            component={WebViewScreen}
+            options={({route}) => ({title: route.params.name})}
+          />
+        </Stack.Navigator>
+      </NavigationContainer>
     </>
   );
 };

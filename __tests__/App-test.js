@@ -5,10 +5,13 @@
 import 'react-native';
 import React from 'react';
 import App from '../App';
+import {create, act} from 'react-test-renderer';
 
-// Note: test renderer must be required after react-native.
-import renderer from 'react-test-renderer';
+it('renders correctly', async () => {
+  let root;
+  act(() => {
+    root = create(<App />);
+  });
 
-it('renders correctly', () => {
-  renderer.create(<App />);
+  expect(root.toJSON()).toMatchSnapshot();
 });
