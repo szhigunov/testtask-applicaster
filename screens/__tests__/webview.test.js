@@ -10,10 +10,12 @@ import {WebViewScreen} from '../webview';
 import renderer from 'react-test-renderer';
 
 it('WebViewScreen renders correctly', () => {
-  renderer.create(
+  let root = renderer.create(
     <WebViewScreen
       route={{params: {data: {href: 'someurl'}}}}
       navigation={{goBack: jest.fn()}}
     />,
   );
+
+  expect(root.toJSON()).toMatchSnapshot();
 });

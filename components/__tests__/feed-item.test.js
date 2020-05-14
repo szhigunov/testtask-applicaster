@@ -60,6 +60,7 @@ const DATA = [
 
 describe('Component/FeedItem', () => {
   it('FeedItem renders correctly', () => {
-    renderer.create(<FeedItem item={DATA[0]} />);
+    let root = renderer.create(<FeedItem item={DATA[0]} />);
+    expect(root.toJSON()).toMatchSnapshot();
   });
 });

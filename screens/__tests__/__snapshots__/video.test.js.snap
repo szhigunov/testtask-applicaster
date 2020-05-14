@@ -1,0 +1,69 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`VideoScreen renders correctly 1`] = `
+Array [
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "flex": 1,
+        "justifyContent": "center",
+      }
+    }
+  >
+    <View>
+      <ActivityIndicator
+        animating={true}
+        color="#999999"
+        hidesWhenStopped={true}
+        size="small"
+      />
+      <Text
+        style={
+          Object {
+            "paddingTop": 10,
+          }
+        }
+      >
+        Loading...
+      </Text>
+    </View>
+  </View>,
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#000",
+        "flex": 1,
+        "justifyContent": "center",
+      }
+    }
+  >
+    <Video
+      controls={true}
+      muted={false}
+      onError={[Function]}
+      onLoad={[Function]}
+      paused={false}
+      playInBackground={false}
+      playWhenInactive={false}
+      progressUpdateInterval={250}
+      rate={1}
+      repeat={false}
+      resizeMode="contain"
+      source={
+        Object {
+          "uri": "someurl",
+        }
+      }
+      style={
+        Object {
+          "flex": 1,
+          "width": "100%",
+        }
+      }
+      volume={0}
+    />
+  </View>,
+]
+`;

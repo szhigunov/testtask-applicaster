@@ -10,5 +10,6 @@ import {HomeScreen} from '../home';
 import renderer from 'react-test-renderer';
 
 it('HomeScreen renders correctly', () => {
-  renderer.create(<HomeScreen navigation={{navigate: jest.fn()}} />);
+  let root = renderer.create(<HomeScreen navigation={{navigate: jest.fn()}} />);
+  expect(root.toJSON()).toMatchSnapshot();
 });

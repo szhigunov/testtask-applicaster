@@ -46,9 +46,7 @@ export const FeedItem = ({onPress, item}) => {
           }
         }}>
         <View>
-          <Text style={styles.title}>
-            {type}: {item.title}
-          </Text>
+          <Text style={styles.title}>{item.title}</Text>
           <Image style={styles.image} source={{uri: getImageUri(item)}} />
           <Text style={styles.summary}>{item.summary}</Text>
           {type === 'video' && <Button title="PLAY" onPress={openVideo} />}
@@ -60,8 +58,14 @@ export const FeedItem = ({onPress, item}) => {
 
 const styles = StyleSheet.create({
   feedItem: {backgroundColor: '#fff', margin: 10},
-  title: {fontWeight: '600', fontSize: 16, padding: 10},
+  title: {
+    writingDirection: 'rtl',
+    fontWeight: '600',
+    fontSize: 16,
+    padding: 10,
+  },
   summary: {
+    writingDirection: 'rtl',
     fontSize: 12,
     padding: 10,
     paddingLeft: 15,

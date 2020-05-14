@@ -1,0 +1,63 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component/FeedItem FeedItem renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "#fff",
+      "margin": 10,
+    }
+  }
+>
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+  >
+    <Text
+      style={
+        Object {
+          "fontSize": 16,
+          "fontWeight": "600",
+          "padding": 10,
+          "writingDirection": "rtl",
+        }
+      }
+    >
+      נתניהו בראיון: "מאשימים אותי בבגידה? את כולם אני אתבע"
+    </Text>
+    <Image
+      source={
+        Object {
+          "uri": "https://www.20il.co.il/wp-content/uploads/2019/03/%D7%A0%D7%AA%D7%A0%D7%99%D7%94%D7%95-%D7%91%D7%A8%D7%90%D7%99%D7%95%D7%9F-1270x714.jpg",
+        }
+      }
+      style={
+        Object {
+          "height": 200,
+          "width": "100%",
+        }
+      }
+    />
+    <Text
+      style={
+        Object {
+          "fontSize": 12,
+          "padding": 10,
+          "paddingLeft": 15,
+          "paddingRight": 15,
+          "writingDirection": "rtl",
+        }
+      }
+    >
+      ראש הממשלה סבור כי הרמטכ"לים לשעבר של 'כחול לבן' יודעים שלא קיבל כסף ממכירת צוללות ומשיב אש: "אותי אתם מאשימים בבגידה? את מי שנלחם נגד כל העולם כדי למנוע מאיראן את ההסכם שאתם תמכתם בו?" | הראיון המלא הערב בחדשות 20
+    </Text>
+  </View>
+</View>
+`;

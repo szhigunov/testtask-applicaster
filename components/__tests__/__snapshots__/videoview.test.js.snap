@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`VideoView renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#000",
+      "flex": 1,
+      "justifyContent": "center",
+    }
+  }
+>
+  <Video
+    controls={true}
+    muted={false}
+    onError={[Function]}
+    onLoad={[Function]}
+    paused={false}
+    playInBackground={false}
+    playWhenInactive={false}
+    progressUpdateInterval={250}
+    rate={1}
+    repeat={false}
+    resizeMode="contain"
+    source={
+      Object {
+        "uri": "someurl",
+      }
+    }
+    style={
+      Object {
+        "flex": 1,
+        "width": "100%",
+      }
+    }
+    volume={0}
+  />
+</View>
+`;

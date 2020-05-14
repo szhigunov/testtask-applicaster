@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchInput renders correctly 1`] = `
+<TextInput
+  allowFontScaling={true}
+  onChangeText={[MockFunction]}
+  placeholder="Search"
+  rejectResponderTermination={true}
+  style={
+    Object {
+      "backgroundColor": "#fff",
+      "height": 40,
+      "marginLeft": 10,
+      "marginRight": 10,
+      "marginTop": 10,
+      "paddingBottom": 10,
+      "paddingLeft": 10,
+      "paddingTop": 10,
+    }
+  }
+  underlineColorAndroid="transparent"
+  value=""
+/>
+`;

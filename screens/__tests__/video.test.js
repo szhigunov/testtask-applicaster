@@ -10,5 +10,6 @@ import {VideoScreen} from '../video';
 import renderer from 'react-test-renderer';
 
 it('VideoScreen renders correctly', () => {
-  renderer.create(<VideoScreen route={{params: {data: {uri: 'someurl'}}}} />);
+  let root = renderer.create(<VideoScreen route={{params: {data: {uri: 'someurl'}}}} />);
+  expect(root.toJSON()).toMatchSnapshot();
 });

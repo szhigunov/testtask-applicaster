@@ -10,5 +10,6 @@ import {VideoView} from '../videoview';
 import renderer from 'react-test-renderer';
 
 it('VideoView renders correctly', () => {
-  renderer.create(<VideoView uri="someurl" />);
+  let root = renderer.create(<VideoView uri="someurl" />);
+  expect(root.toJSON()).toMatchSnapshot();
 });

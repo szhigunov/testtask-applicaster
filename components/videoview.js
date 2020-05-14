@@ -3,7 +3,6 @@ import {View, StyleSheet} from 'react-native';
 import Video from 'react-native-video';
 
 export const VideoView = ({onLoad, onError, uri}) => {
-  console.log(uri)
   return (
     <View style={styles.videoView}>
       <Video
@@ -23,7 +22,6 @@ export const VideoView = ({onLoad, onError, uri}) => {
         progressUpdateInterval={250.0}
         onLoad={() => {
           onLoad(true);
-          console.warn('loaded');
         }}
         onError={err => {
           onError(false);
